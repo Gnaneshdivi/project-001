@@ -10,13 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
     "@routerprotocol/router-js-sdk": "^0.1.5",
     "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
+    "ethers": "^6.0.4",
+    "express": "^4.18.2",
     "node-fetch": "^2.6.7",
     "revise-sdk": "^0.1.16",
+    "truffle-hdwallet-provider": "^1.0.17",
     "tslib": "^2.4.1",
-    "twilio": "^3.83.1"
+    "twilio": "^3.83.1",
+    "web3": "^1.8.2"
   }
 }
