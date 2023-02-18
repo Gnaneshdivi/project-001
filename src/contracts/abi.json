@@ -1,0 +1,431 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_txnId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_senderAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_receiverAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_txnref1",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_txnref2",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_sendingType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_receivingType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_network",
+				"type": "string"
+			}
+		],
+		"name": "recordTransaction",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "crossTransactions",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "txnId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "senderAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "receiverAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "txnref1",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "txnref2",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "sendingType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "receivingType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "network",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "cryptoTransactions",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "txnId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "senderAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "receiverAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "txnref1",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "txnref2",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "sendingType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "receivingType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "network",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getCrossTransactions",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "txnId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "senderAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "receiverAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "txnref1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "txnref2",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "sendingType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "receivingType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "network",
+						"type": "string"
+					}
+				],
+				"internalType": "struct TransactionRecorder.TransactionData[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getCryptoTransactions",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "txnId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "senderAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "receiverAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "txnref1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "txnref2",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "sendingType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "receivingType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "network",
+						"type": "string"
+					}
+				],
+				"internalType": "struct TransactionRecorder.TransactionData[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_txnId",
+				"type": "string"
+			}
+		],
+		"name": "getTransactionData",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getUpiTransactions",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "txnId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "senderAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "receiverAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "txnref1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "txnref2",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "sendingType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "receivingType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "network",
+						"type": "string"
+					}
+				],
+				"internalType": "struct TransactionRecorder.TransactionData[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "upiTransactions",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "txnId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "senderAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "receiverAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "txnref1",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "txnref2",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "sendingType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "receivingType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "network",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
