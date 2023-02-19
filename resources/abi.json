@@ -1,56 +1,125 @@
 [
 	{
+		"anonymous": false,
 		"inputs": [
 			{
+				"indexed": false,
 				"internalType": "string",
-				"name": "_txnId",
+				"name": "txnId",
 				"type": "string"
 			},
 			{
+				"indexed": false,
 				"internalType": "string",
-				"name": "_senderAddress",
+				"name": "senderAddress",
 				"type": "string"
 			},
 			{
+				"indexed": false,
 				"internalType": "string",
-				"name": "_receiverAddress",
+				"name": "receiverAddress",
 				"type": "string"
 			},
 			{
+				"indexed": false,
 				"internalType": "string",
-				"name": "_txnref1",
+				"name": "txnref1",
 				"type": "string"
 			},
 			{
+				"indexed": false,
 				"internalType": "string",
-				"name": "_txnref2",
+				"name": "txnref2",
 				"type": "string"
 			},
 			{
+				"indexed": false,
 				"internalType": "uint256",
-				"name": "_amount",
+				"name": "amount",
 				"type": "uint256"
 			},
 			{
+				"indexed": false,
 				"internalType": "string",
-				"name": "_sendingType",
+				"name": "sendingType",
 				"type": "string"
 			},
 			{
+				"indexed": false,
 				"internalType": "string",
-				"name": "_receivingType",
+				"name": "receivingType",
 				"type": "string"
 			},
 			{
+				"indexed": false,
 				"internalType": "string",
-				"name": "_network",
+				"name": "network",
 				"type": "string"
 			}
 		],
-		"name": "recordTransaction",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
+		"name": "TransactionRecorded",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "txnId",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "senderAddress",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "receiverAddress",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "txnref1",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "txnref2",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "sendingType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "receivingType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "network",
+				"type": "string"
+			}
+		],
+		"name": "showTransaction",
+		"type": "event"
 	},
 	{
 		"inputs": [
@@ -306,7 +375,7 @@
 				"type": "string"
 			}
 		],
-		"stateMutability": "view",
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -367,6 +436,59 @@
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_txnId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_senderAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_receiverAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_txnref1",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_txnref2",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_sendingType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_receivingType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_network",
+				"type": "string"
+			}
+		],
+		"name": "recordTransaction",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{

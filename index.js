@@ -10,6 +10,8 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use("/",router);
+router.use('/web', require('./src/external/webapi'));
+router.use('/api', require('./src/external/api'));
 const web3= require("./src/helpers/web3")
 const signup= require("./src/auth/signup");
 const { sign } = require('crypto');
@@ -23,8 +25,8 @@ router.post("/tran",async (req,res)=>{
   // signup.updatepin("d1-100","100")
 });
 router.post("/create",async (req,res)=>{
- 
-  signup.createuser("100","gnanesh","123","123@okaxis");
+ web3.write_tramsaction('d4061fb759f7c29a96d572a808854f0933e897e678278207b268c6c67fe3f156')
+  // signup.createuser("100","gnanesh","123","123@okaxis");
  
 });
 
