@@ -32,11 +32,12 @@ Setup fund transfers between mediums.
 Utilizing cryptographic methods for security on the application.
 
 # Future Builds
-Develop UI for the B1 webpage and add functionalities 
-Extending the web app functionalities to integration level, leveraging powerful integrations for P2P applications.
-Kyc using live peer video streaming 
-Utilizing Superfluid for Subscription based payments 
-Technologies used 
+- Develop UI for the B1 webpage and add functionalities 
+- Extending the web app functionalities to integration level, leveraging powerful integrations for P2P applications.
+- Kyc using live peer video streaming 
+- Utilizing Superfluid for Subscription based payments 
+
+# Technologies used 
 NodeJS,ExpressJS,React,Arcana,TheGraph,polywrap
 
 
